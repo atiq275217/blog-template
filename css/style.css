@@ -1,0 +1,154 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Serif', serif;
+    font-size: 18px;
+}
+.container{
+    width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.container:before,
+.container:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.col100{
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.col50{
+    width: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.col33{
+    width: 33.33%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/*Common Css*/
+
+/*Header Area*/
+.header{
+    
+}
+.logo{
+    display: inline-block;
+    background: #1a54e7;
+    position: relative;
+}
+.logo:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -30000px;
+    right: 100%;
+    background: #1a54e7;
+}
+.logo a{
+    text-decoration: none;
+    display: block;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    padding-right: 35px;
+    color: #fff;
+}
+.menu{
+    float: right;
+}
+.menu ul{
+    padding: 0;
+    margin: 0;
+}
+.menu ul li{
+    list-style: none;
+    float: left;
+}
+.menu ul li a {
+    text-decoration: none;
+    display: block;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    padding-right: 15px;
+    padding-left: 15px;
+    color: #1a54e7;
+}
+
+.menu ul li.active a {
+    position: relative;
+}
+.menu ul li.active a:after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    background: #1a54e7;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+/* End header area  */
+
+/* Start Banner */
+.banner{
+    text-align: center;
+    background: url(../images/bg/banner.jpg);
+   
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    color: white;
+}
+.banner-in{
+    position: relative;
+     padding-top: 215px;
+    padding-bottom: 215px;
+}
+.banner-in h2{
+    font-size: 48px;
+}
+.cat{
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+}
+.cat a{
+    display: inline-block;
+    padding: 10px;
+    background: #1a54e7;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+.date-author{
+    position: absolute;
+    bottom: 40px;
+    right: 0;
+}
+.date-author a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+   
+}
+.date-author a:first-child{
+    color: #fff;
+    border-right: 2px solid white;
+    padding-right: 15px;
+}
+.date-author a:last-child{
+    color: #1a54e7;
+   padding-left: 15px;
+}
+/* End Bnner */
+
